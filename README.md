@@ -4,7 +4,7 @@ This document provides an overview of the functionality and features of the calc
 
 ## Expression Calculator
 
-![Expression Calculator](media/expression_calculator.gif)
+![Expression Calculator](dvi-readme/media/expression_calculator.gif)
 
 The Expression Calculator allows you to perform mathematical calculations. Key features include:
 
@@ -16,7 +16,7 @@ The Expression Calculator allows you to perform mathematical calculations. Key f
 
 ## Graph Calculator
 
-![Graph Calculator](media/graph_calculator.gif)
+![Graph Calculator](dvi-readme/media/graph_calculator.gif)
 
 The Graph Calculator enables you to visualize mathematical functions and equations. It includes:
 
@@ -26,7 +26,7 @@ The Graph Calculator enables you to visualize mathematical functions and equatio
 
 ## Credit Calculator
 
-![Credit Calculator](media/credit_calculator.gif)
+![Credit Calculator](dvi-readme/media/credit_calculator.gif)
 
 The Credit Calculator helps you make informed financial decisions regarding credits. Key features are:
 
@@ -38,7 +38,7 @@ The Credit Calculator helps you make informed financial decisions regarding cred
 
 ## Deposit Calculator
 
-![Deposit Calculator](media/deposit_calculator.gif)
+![Deposit Calculator](dvi-readme/media/deposit_calculator.gif)
 
 The Deposit Calculator assists you in managing your savings and investments. It provides:
 
