@@ -1,0 +1,2829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>310</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Smart Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(50,50,50)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>310</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="calculator">
+     <widget class="QPushButton" name="pushButton_0">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>435</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_dot">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>435</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_equals">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>435</y>
+        <width>111</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>375</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>375</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>375</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_plus">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>375</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>315</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>255</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>315</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>255</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>315</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>255</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_clear">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>435</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>CLR</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_minus">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>375</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_multiply">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>315</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>*</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_divide">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>315</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_power">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>255</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>^</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_mod">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>255</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px 1px; /* Padding inside the button */
+	font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_sqrt">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>215</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>sqrt</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_bracket_opened">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>215</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>(</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_bracket_closed">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>215</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_cos">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>155</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>cos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_sin">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>155</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>sin</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_acos">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>185</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>acos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_asin">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>185</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>asin</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_tan">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>155</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>tan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ln">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>215</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>ln</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_atan">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>185</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>atan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_log">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>215</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>log</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_X">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>150</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>X:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_X">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>150</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+	font-size: 10pt;
+    alignment: center; /* or left, right, justify */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="maxLength">
+       <number>31</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 30px; /* Rounded corners */
+    padding: 5px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>255</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_variable">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>185</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 11px; /* Rounded corners */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lastCalculations">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>281</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0.01 rgba(0, 0, 0, 150), stop: 1 transparent);
+    color: rgba(255 ,255,255, 170); /* Text color */
+    font-size: 14px; /* Font size */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_penultimateCalculations">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>24</y>
+        <width>281</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0.01 rgba(0, 0, 0, 120), stop: 1 transparent);
+    color: rgba(255 ,255,255, 130); /* Text color */
+    font-size: 13px; /* Font size */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_antePenultimateCalculations">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>8</y>
+        <width>281</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0.01 rgba(0, 0, 0, 90), stop: 1 transparent);
+    color: rgba(255 ,255,255, 80); /* Text color */
+    font-size: 12px; /* Font size */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="credit">
+     <widget class="QLineEdit" name="lineEdit_credit_creditAmount">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 20px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_credit_creditDeadline">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 20px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_credit_creditAmount">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Credit amount</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_credit_creditDeadline">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Credit deadline</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_credit_termType">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>90</y>
+        <width>80</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Apply the style to the QComboBox */
+QComboBox {
+    border: 1px solid rgb(100,100,100); /* Border style and color */
+    border-radius: 20px; /* Rounded corners */
+    /*padding: 0px ; /* Padding inside the combo box */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(230,230,230); /* Text color */
+    selection-color: #FFF; /* Selected text color */
+    selection-background-color: rgb(147,112,219); /* Selected background color */
+}
+
+/* Dropdown button style */
+QComboBox::drop-down {
+	width: 50px; 
+    border: none; /* Remove the drop-down button border */
+    background-color: ; /* Transparent background */
+}
+
+/* Dropdown list style */
+QComboBox QAbstractItemView {
+    border: 0px solid #ccc; /* Border style and color for the dropdown list */
+    border-radius: 5px; /* Rounded corners for the dropdown list */
+    background-color: rgb(35,35,35); /* Background color for the dropdown list */
+    color: rgb(230,230,230); /* Text color */
+    selection-background-color: rgb(55,55,55); /* Selected item background color */
+}
+
+/* Hover effect for dropdown list items */
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgb(147,112,219); /* Background color when hovering over items */
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Month</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_credit_interestValue">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>150</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 20px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_credit_interestValue">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Interest value</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_credit_typeOfMonthlyPayments">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Type of monthly payments</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_credit_paymentsType">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>210</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Apply the style to the QComboBox */
+QComboBox {
+    border: 1px solid rgb(100,100,100); /* Border style and color */
+    border-radius: 10px; /* Rounded corners */
+    /*padding: 0px ; /* Padding inside the combo box */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(230,230,230); /* Text color */
+    selection-color: #FFF; /* Selected text color */
+    selection-background-color: rgb(147,112,219); /* Selected background color */
+}
+
+/* Dropdown button style */
+QComboBox::drop-down {
+	width: 50px; 
+    border: none; /* Remove the drop-down button border */
+    background-color: ; /* Transparent background */
+}
+
+/* Dropdown list style */
+QComboBox QAbstractItemView {
+    border: 0px solid #ccc; /* Border style and color for the dropdown list */
+    border-radius: 5px; /* Rounded corners for the dropdown list */
+    background-color: rgb(35,35,35); /* Background color for the dropdown list */
+    color: rgb(230,230,230); /* Text color */
+    selection-background-color: rgb(55,55,55); /* Selected item background color */
+}
+
+/* Hover effect for dropdown list items */
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgb(147,112,219); /* Background color when hovering over items */
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Differential</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Annual</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_credit_clear">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 0px solid #007ACC; /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_credit_calculate">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 0px solid #007ACC; /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_credit_percent">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>148</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16pt;
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>290</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QGroupBox {
+    border: none; /* Remove the border */
+    background-color: transparent; /* Make the background transparent */
+    margin: 0; /* Remove any margin */
+}
+
+/* Apply the style to the title label of the QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0; /* Remove padding for the title */
+    border: none; /* Remove the title border */
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_credit_result_title">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>8</y>
+         <width>58</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb();
+ color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string>Results:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_credit_result_header">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>290</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background-color: rgb(30, 30, 31); /* Adjust the color to your preference */
+    border-top-left-radius: 10px; /* Adjust the radius for rounding */
+    border-top-right-radius: 10px; /* Adjust the radius for rounding */
+    padding: 10px; /* Add padding for spacing inside the rounded square */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_credit_monthlyPaymentResult">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>111</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb();
+    color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string>Montly payment: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_credit_result_background">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>290</width>
+         <height>195</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background-color: rgb(35, 35, 36); /* Adjust the color to your preference */
+    border-radius: 10px; /* Adjust the radius for rounding */
+    padding: 10px; /* Add padding for spacing inside the rounded square */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_credit_mothtlyPaymentResult_value">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>125</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb();
+    color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_credit_interestCharges_value">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>90</y>
+         <width>125</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb();
+    color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_credit_interestCharges">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>111</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb();
+    color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string>Interest charges:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_credit_debtPlusCharges">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>111</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb();
+    color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string>Debt + charges:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_credit_debtPlusCharges_value">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>130</y>
+         <width>125</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb();
+    color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_credit_result_background</zorder>
+      <zorder>label_credit_result_header</zorder>
+      <zorder>label_credit_result_title</zorder>
+      <zorder>label_credit_monthlyPaymentResult</zorder>
+      <zorder>label_credit_mothtlyPaymentResult_value</zorder>
+      <zorder>label_credit_interestCharges_value</zorder>
+      <zorder>label_credit_interestCharges</zorder>
+      <zorder>label_credit_debtPlusCharges</zorder>
+      <zorder>label_credit_debtPlusCharges_value</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="deposit">
+     <widget class="QLabel" name="label_deposit_depositAmount">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>95</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Deposit amount</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_deposit_depositAmount">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>10</y>
+        <width>160</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_deposit_placementPeriod">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Apply the style to the QComboBox */
+QComboBox {
+    border: 1px solid rgb(100,100,100); /* Border style and color */
+    border-radius: 10px; /* Rounded corners */
+    /*padding: 0px ; /* Padding inside the combo box */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(230,230,230); /* Text color */
+    selection-color: #FFF; /* Selected text color */
+    selection-background-color: rgb(147,112,219); /* Selected background color */
+}
+
+/* Dropdown button style */
+QComboBox::drop-down {
+	width: 50px; 
+    border: none; /* Remove the drop-down button border */
+    background-color: ; /* Transparent background */
+}
+
+/* Dropdown list style */
+QComboBox QAbstractItemView {
+    border: 0px solid #ccc; /* Border style and color for the dropdown list */
+    border-radius: 5px; /* Rounded corners for the dropdown list */
+    background-color: rgb(35,35,35); /* Background color for the dropdown list */
+    color: rgb(230,230,230); /* Text color */
+    selection-background-color: rgb(55,55,55); /* Selected item background color */
+}
+
+/* Hover effect for dropdown list items */
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgb(147,112,219); /* Background color when hovering over items */
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Month</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Day</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_deposit_placementPeriod">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>105</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Placement period</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_deposit_placementPeriod">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_deposit_clear">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>372</y>
+        <width>140</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 0px solid #007ACC; /* Border color and width */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1px; /* Padding inside the button */
+font-size: 11pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_deposit_paymentsPeriodicity">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>197</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Apply the style to the QComboBox */
+QComboBox {
+    border: 1px solid rgb(100,100,100); /* Border style and color */
+    border-radius: 8px; /* Rounded corners */
+    /*padding: 0px ; /* Padding inside the combo box */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(230,230,230); /* Text color */
+    selection-color: #FFF; /* Selected text color */
+    selection-background-color: rgb(147,112,219); /* Selected background color */
+}
+
+/* Dropdown button style */
+QComboBox::drop-down {
+	width: 50px; 
+    border: none; /* Remove the drop-down button border */
+    background-color: ; /* Transparent background */
+}
+
+/* Dropdown list style */
+QComboBox QAbstractItemView {
+    border: 0px solid #ccc; /* Border style and color for the dropdown list */
+    border-radius: 5px; /* Rounded corners for the dropdown list */
+    background-color: rgb(35,35,35); /* Background color for the dropdown list */
+    color: rgb(230,230,230); /* Text color */
+    selection-background-color: rgb(55,55,55); /* Selected item background color */
+}
+
+/* Hover effect for dropdown list items */
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgb(147,112,219); /* Background color when hovering over items */
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Every day</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Every week</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Every month</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Every quarter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Every half of year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Every year</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_deposit_calculate">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>372</y>
+        <width>140</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 0px solid #007ACC; /* Border color and width */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1px; /* Padding inside the button */
+font-size: 11pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_deposit_paymentsPeriodicity">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>197</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Payments periodocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_deposit_depositDate">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>105</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Deposit date</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit_deposit_depositDate">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>66</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(230,230,230); /* Text color */
+	font-size: 12pt;
+}
+QDateEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_deposit_payments_logs">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>391</y>
+        <width>140</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 0px solid #007ACC; /* Border color and width */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1px; /* Padding inside the button */
+font-size: 11pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>Payments logs</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_deposit_taxes_logs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>391</y>
+        <width>140</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 0px solid #007ACC; /* Border color and width */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1px; /* Padding inside the button */
+font-size: 11pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>Taxes logs</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_deposit_capitalization">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>173</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Capitalization</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_deposit_capitalization">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>173</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+	border-radius: 10px;
+}
+
+QCheckBox::indicator:unchecked {
+    border: 2px solid rgb(140, 140, 140);
+    background-color: rgb(50, 50, 50);
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 2px solid rgb(147,112,219);
+    background-color: rgb(50, 50, 50);
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid rgb(147,112,219);
+    background-color: rgb(147,112,219);
+}
+
+QCheckBox::indicator:checked:hover {
+    border: 2px solid rgb(147,112,219);
+    background-color: rgb(135, 100,207);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_deposit_results">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>413</y>
+        <width>290</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QGroupBox {
+    border: none; /* Remove the border */
+    background-color: transparent; /* Make the background transparent */
+    margin: 0; /* Remove any margin */
+}
+
+/* Apply the style to the title label of the QGroupBox */
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0; /* Remove padding for the title */
+    border: none; /* Remove the title border */
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_depositresult_title">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>2</y>
+         <width>58</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 12pt; 
+background-color: rgb();
+color: rgb(230, 230, 230);</string>
+       </property>
+       <property name="text">
+        <string>Results:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_deposit_result_header">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>290</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background-color: rgb(30, 30, 31); /* Adjust the color to your preference */
+    border-top-left-radius: 10px; /* Adjust the radius for rounding */
+    border-top-right-radius: 10px; /* Adjust the radius for rounding */
+    padding: 10px; /* Add padding for spacing inside the rounded square */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_deposit_depositPlusCharges">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>38</y>
+         <width>104</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10pt;
+padding: 1px;
+background-color: rgb();
+    color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string>Deposit + charges:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_deposit_result_background">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>290</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background-color: rgb(35, 35, 36); /* Adjust the color to your preference */
+    border-radius: 10px; /* Adjust the radius for rounding */
+    padding: 10px; /* Add padding for spacing inside the rounded square */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_deposit_interestCharges">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>18</y>
+         <width>104</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10pt;
+padding: 1px;
+background-color: rgb();
+    color: rgb(230,230,230); /* Text color */</string>
+       </property>
+       <property name="text">
+        <string>Interest charges:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_deposit_taxes">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>58</y>
+         <width>104</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10pt;
+padding: 1px;
+background-color: rgb();
+color: rgb(230, 230, 230);</string>
+       </property>
+       <property name="text">
+        <string>Taxes:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_deposit_interestCharges_value">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>18</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10pt;
+padding: 1px;
+ background-color: rgb();
+color: rgb(230, 230, 230);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_deposit_depositPlusCharges_value">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>39</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10pt;
+padding: 1px;
+ background-color: rgb();
+color: rgb(230, 230, 230);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_deposit_taxes_value">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>60</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size: 10pt;
+padding: 1px;
+ background-color: rgb();
+color: rgb(230, 230, 230);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_deposit_result_background</zorder>
+      <zorder>label_deposit_result_header</zorder>
+      <zorder>label_deposit_interestCharges</zorder>
+      <zorder>label_deposit_depositPlusCharges</zorder>
+      <zorder>label_depositresult_title</zorder>
+      <zorder>label_deposit_taxes</zorder>
+      <zorder>label_deposit_interestCharges_value</zorder>
+      <zorder>label_deposit_depositPlusCharges_value</zorder>
+      <zorder>label_deposit_taxes_value</zorder>
+     </widget>
+     <widget class="QWidget" name="widget_interest_rate" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>271</width>
+        <height>86</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb();</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_refills" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>271</width>
+        <height>82</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb();</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_withdrawals" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>284</y>
+        <width>271</width>
+        <height>82</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb();</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="graph">
+     <widget class="QCustomPlot" name="customPlot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>290</width>
+        <height>300</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 75, 75)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_domain">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>130</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+	font-size: 10pt;
+    alignment: center; /* or left, right, justify */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string>2*pi</string>
+      </property>
+      <property name="maxLength">
+       <number>20</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_codomain">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>160</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+	font-size: 10pt;
+    alignment: center; /* or left, right, justify */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string>2*pi</string>
+      </property>
+      <property name="maxLength">
+       <number>20</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_domain">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Domain:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_codomain">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    color: rgb(230,230,230); /* Text color */</string>
+      </property>
+      <property name="text">
+       <string>Codomain:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_graph_clear">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>140</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 0px solid #007ACC; /* Border color and width */
+    border-radius: 15px; /* Rounded corners */
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_graph_draw">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>90</y>
+        <width>140</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 0px solid #007ACC; /* Border color and width */
+    border-radius: 15px; /* Rounded corners */
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+    border: 1px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>Draw</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_graph_expression">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>290</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+    border: 1px solid rgb(100 ,100, 100); /* Border color and width */
+    border-radius: 30px; /* Rounded corners */
+    padding: 5px; /* Padding inside the QLineEdit */
+    background-color: rgb(35,35,35); /* Background color */
+    color: rgb(200, 200, 200); /* Text color */
+}
+
+QLineEdit:focus {
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    background-color: rgb(35, 35, 35); /* Background color when QLineEdit is focused */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_graph">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>27</y>
+      <width>65</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px 1px; /* Padding inside the button */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+    </property>
+    <property name="text">
+     <string>graph</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_credit">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>27</y>
+      <width>65</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px 1px; /* Padding inside the button */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+    </property>
+    <property name="text">
+     <string>credit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_deposit">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>27</y>
+      <width>65</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(100, 100, 100); /* Border color and width */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px 1px; /* Padding inside the button */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+    </property>
+    <property name="text">
+     <string>deposit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_calculator">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>27</y>
+      <width>65</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(75, 75, 75); /* Background color */
+    color: #FFF; /* Text color */
+    border: 1px solid rgb(147,112,219); /* Border color when QLineEdit is focused */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1px 1px; /* Padding inside the button */
+	font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 85, 85); /* Background color on hover */
+    /*border: 2px solid rgb(147,112,219); /* Border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: rgb(65, 65, 65); /* Background color when pressed */
+   /* border: 2px solid rgb(147,112,219); /* Border color on hover */
+}</string>
+    </property>
+    <property name="text">
+     <string>calculator</string>
+    </property>
+   </widget>
+   <zorder>stackedWidget</zorder>
+   <zorder>pushButton_deposit</zorder>
+   <zorder>pushButton_graph</zorder>
+   <zorder>pushButton_credit</zorder>
+   <zorder>pushButton_calculator</zorder>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
